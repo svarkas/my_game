@@ -113,8 +113,8 @@ while running:
     for dot in dice_dots:
         pygame.draw.rect(screen, dice_dots_rgb, dot)
     
-    for i in range(1, 10, 1):
-        path_rect = pygame.Rect(0*(1+i), 80, 80, 80)
+    for i in range(0, 9, 1):
+        path_rect = pygame.Rect((80*i), 80, 80, 80)
         pygame.draw.rect(screen, odd_rgb, path_rect)
     #path_rect = pygame.Rect (80, 80, 80, 80)
     #pygame.draw.rect(screen, even_rgb, path_rect)
